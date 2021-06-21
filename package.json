@@ -1,0 +1,19 @@
+{
+  "name": "d3a",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "cypress-cucumber-preprocessor": {    
+    "step_definitions": "cypress/integration/examples/stepDefs/**/"
+  },
+   "author": "Abhishek",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^7.5.0",
+    "cypress-cucumber-preprocessor": "^4.1.2"
+  }
+  
+}
