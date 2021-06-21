@@ -9,5 +9,8 @@ class LoginPage{
     getLoginButton(){
         return cy.get('.button')
     }
+    getLoginH2Text(){
+        return cy.get('.headline')
+    }
     }
     export default LoginPage
