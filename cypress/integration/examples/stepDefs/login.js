@@ -1,8 +1,9 @@
 /// <reference types="Cypress"/>
 import { Given,When,Then } from "cypress-cucumber-preprocessor/steps";
+import HomePage from "../pageObjects/homePageObjs";
 import LoginPage from '../pageObjects/loginPageObjs'
 const login =new LoginPage()
-
+const home =new HomePage()
 
 
 Given('User is on D3A Landing Page',function(){
@@ -13,7 +14,7 @@ When('User clicks on Login button',function(){
     login.getLoginButton().click()
 })
 
-Then('User is navigated to Login Page',function(){
+Then('Validate user is navigated to Login Page',function(){
     login.getLoginH2Text().should('have.text','Login')
 })
 
@@ -29,6 +30,7 @@ When('User clicks on Login button',function(){
     login.getLoginButton().click()
 })
 
-Then('User is logged in and navigated to Home Page',function(){
-    
+Then('Validate user is logged in and navigated to Home Page',function(){
+    home.getHomeH1().should('have.text','Home')
+
 })
