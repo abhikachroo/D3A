@@ -15,5 +15,14 @@ class ProjectPage{
     getCreateProjectName(){
         return cy.get('saved-project__headline__name__text')
     }
+    getNewSimulationButton(){
+        return cy.get('.saved-project__button--new-simulation')
+    }
+    getSimulationName(){
+        return cy.get('#input-field-name')
+    }
+    getNextButton(){
+        return cy.get('.settings-form__submit')
+    }
 }
 export default  ProjectPage
