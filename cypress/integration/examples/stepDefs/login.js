@@ -6,19 +6,8 @@ const login =new LoginPage()
 const home =new HomePage()
 
 
-Given('User is on D3A Landing Page',function(){
-    cy.visit(this.data.site)
-})
-
-When('User clicks on Login button',function(){
-    login.getLoginButton().click()
-})
-
-Then('Validate user is navigated to Login Page',function(){
-    login.getLoginH2Text().should('have.text','Login')
-})
-
 Given('User is on D3A Login Page',function(){
+    cy.visit(this.data.site)
     login.getLoginH2Text().should('have.text','Login')
 })
 When('User enters Email and Password',function(){
@@ -28,6 +17,7 @@ When('User enters Email and Password',function(){
 
 When('User clicks on Login button',function(){
     login.getLoginButton().click()
+    cy.wait(2000)
 })
 
 Then('Validate user is logged in and navigated to Home Page',function(){

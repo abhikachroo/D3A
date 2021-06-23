@@ -1,7 +1,9 @@
 {
   "email": "abhishekkachroo10@gmail.com",
   "password":"Germany@2022",
-  "site":"https://www.d3a.io",
+  "site":"https://www.d3a.io/projects",
   "projectName":"Test Project",
-  "projectDesc":"Test Project Desc"
+  "projectDesc":"Test Project Desc",
+  "simulationName":"Test Simulation"
+  
 }
