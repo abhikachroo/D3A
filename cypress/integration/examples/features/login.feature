@@ -1,4 +1,4 @@
-Feature: Login & Landing Page Feature
+Feature: Login and Landing Page Feature
 
 Scenario: Login to D3A
 Given User is on D3A Login Page
